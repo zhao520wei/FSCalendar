@@ -37,13 +37,13 @@
         self.contentView = view;
         
         label = [[UILabel alloc] initWithFrame:CGRectZero];
-        label.textAlignment = NSTextAlignmentCenter;
+        label.textAlignment = NSTextAlignmentLeft;
         label.numberOfLines = 0;
         [_contentView addSubview:label];
         self.titleLabel = label;
         
         view = [[UIView alloc] initWithFrame:CGRectZero];
-        view.backgroundColor = FSCalendarStandardLineColor;
+        view.backgroundColor = [UIColor redColor];
         [_contentView addSubview:view];
         self.bottomBorder = view;
         
@@ -59,6 +59,7 @@
     [super layoutSubviews];
     
     _contentView.frame = self.bounds;
+    _contentView.backgroundColor = [UIColor purpleColor];
     
     CGFloat weekdayHeight = _calendar.preferredWeekdayHeight;
     CGFloat weekdayMargin = weekdayHeight * 0.1;
