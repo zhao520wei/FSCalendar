@@ -43,7 +43,7 @@
         self.titleLabel = label;
         
         view = [[UIView alloc] initWithFrame:CGRectZero];
-        view.backgroundColor = [UIColor redColor];
+        view.backgroundColor = [UIColor clearColor];
         [_contentView addSubview:view];
         self.bottomBorder = view;
         
